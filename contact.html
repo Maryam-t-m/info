@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      padding: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    input[type="text"], input[type="email"], textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0;
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="content">
+    <h1>Contact Us</h1>
+    <form action="submit_contact_form.php" method="post">
+      <table>
+        <tr>
+          <th>Name</th>
+          <td><input type="text" name="name" required></td>
+        </tr>
+        <tr>
+          <th>Email</th>
+          <td><input type="email" name="email" required></td>
+        </tr>
+        <tr>
+          <th>Message</th>
+          <td><textarea name="message" rows="5" required></textarea></td>
+        </tr>
+        <tr>
+          <th></th>
+          <td><input type="submit" value="Send"></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+<center>
+ <video width="400" controls>
+      <source src="videos/vid.mp4" type="video/mp4">
+ </video>
+</center>
+
+</body>
+</html>
